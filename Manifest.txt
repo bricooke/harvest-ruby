@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+lib/harvest.rb
+lib/harvest_entry.rb
+spec/harvest_spec.rb
