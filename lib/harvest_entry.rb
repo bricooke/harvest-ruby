@@ -15,6 +15,15 @@ class HarvestEntry
     end
   end
   
+  def expense?
+    begin
+      self.expense_category_id
+      true
+    rescue
+      false
+    end
+  end
+  
   def method_missing(method, *args)
     method = method.to_s.gsub("_", "-").to_sym
     
